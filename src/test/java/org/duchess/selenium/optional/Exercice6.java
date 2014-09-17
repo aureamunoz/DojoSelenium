@@ -1,4 +1,4 @@
-package org.duchess.selenium.part1;
+package org.duchess.selenium.optional;
 
 import org.duchess.selenium.Util;
 import org.junit.After;

@@ -34,26 +34,9 @@ public class Exercice1 {
         assertThat(driver.findElements(By.cssSelector(".audio.hidden")).size()).isEqualTo(1);
     }
 
-    @Test
-    //Appelez nous quand vous voyez le probleme
-    public void when_click_to_next_then_new_datas_with_implicit_wait_2() throws InterruptedException {
-        driver.findElement(By.ByLinkText.linkText("WEB")).click();
-        //ADD Code here
-
-        assertThat(driver.findElements(By.cssSelector("#containment-portfolio li:not(.hidden)")).size()).isEqualTo(4);
-    }
-
 
     @Test //utiliser expectedConditions
     public void when_click_to_next_then_new_datas_with_explicit_wait() throws InterruptedException {
-        driver.findElement(By.ByLinkText.linkText("WEB")).click();
-        //ADD Code here
-
-        assertThat(driver.findElements(By.cssSelector("#containment-portfolio li:not(.hidden)")).size()).isEqualTo(4);
-    }
-
-    @Test //créer votre propre expectedCondition
-    public void when_click_to_next_then_new_datas_with_explicit_wait_2() throws InterruptedException {
         driver.findElement(By.ByLinkText.linkText("WEB")).click();
         //ADD Code here
 

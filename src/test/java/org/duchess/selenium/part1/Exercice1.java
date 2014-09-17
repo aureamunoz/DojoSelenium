@@ -28,15 +28,4 @@ public class Exercice1
         driver.quit();
     }
 
-    @Test
-    public void when_clicking_to_link_blog_then_page_blog() throws IOException {
-        WebDriver driver = new FirefoxDriver();
-        driver.get(Util.getHome());
-
-        // ADD CODE HERE
-
-
-        assertThat(driver.getTitle()).isEqualTo("Blog");
-        driver.quit();
-    }
 }
