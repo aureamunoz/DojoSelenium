@@ -34,6 +34,7 @@ public class Exercice4
         driver.findElement(By.id("bigbutton")).click();
 
         //ADD CODE HERE
+        driver.switchTo().alert().accept();
 
         assertThat(driver.findElement(By.id("bigbutton")).getText()).isEqualTo("CHANGED !");
     }
@@ -45,6 +46,7 @@ public class Exercice4
     public void when_not_accepting_alert_then_text_not_changed() {
         driver.findElement(By.id("bigbutton")).click();
         //ADD CODE HERE
+        driver.switchTo().alert().dismiss();
 
         assertThat(driver.findElement(By.id("bigbutton")).getText()).isEqualTo("NOT CHANGED !");
     }

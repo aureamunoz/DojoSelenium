@@ -31,7 +31,7 @@ public class Exercice3
      * Pour que le test passe, vous devrez valider que la page features.html place bien un cookie "luke" qui a pour valeur "skywalker"
      */
     public void when_page_feature_then_cookie_luke_is_equal_to_skywalker() {
-        Cookie luke = null;
+        Cookie luke = driver.manage().getCookieNamed("luke");
         //ADD CODE HERE
 
         assertThat(luke.getValue()).isEqualTo("skywalker");
