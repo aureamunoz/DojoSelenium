@@ -37,6 +37,19 @@ public class Exercice2
 
 
         assertThat(driver.findElement(By.cssSelector(".mess")).getText()).contains("Thanks");
+
+    }
+
+    @Test
+    /**
+     * Remplir les champs du formulaire sauf le champs email puis valider le formulaire.
+     * Ajouter une assertion pour vérifier que le champs email a maintenant une bordure bleue.
+     */
+    public void when_fill_contact_form_with_no_email_then_field_is_getting_a_blue_border() {
+        //ADD CODE HERE
+
+        assertThat(driver.findElement(By.className("error-input"))).isNotNull();
+
     }
 
 

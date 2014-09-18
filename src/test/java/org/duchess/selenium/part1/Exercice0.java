@@ -16,8 +16,6 @@ public class Exercice0
      * Aller sur une page
      * Regarder le titre
      */
-
-
     @Test
     public void go_to_google_page() throws IOException {
 
