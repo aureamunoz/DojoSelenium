@@ -68,7 +68,7 @@ public class Exercice2
 
     @After
     public void afterTest() {
-        //driver.quit();
+        driver.quit();
     }
 
 }
